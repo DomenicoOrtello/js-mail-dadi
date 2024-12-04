@@ -2,20 +2,20 @@
 //Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 // Genera un numero casuale per il giocatore
-const userNut = Math.floor(Math.random() * 6) + 1;
+const userNum = Math.floor(Math.random() * 6) + 1;
 
 // Genera un numero casuale per la cpu
-const computerNut = Math.floor(Math.random() * 6) + 1;
+const computerNum = Math.floor(Math.random() * 6) + 1;
 
 // Esito
-console.log(`Giocatore ha tirato: ${userNut}`);
-console.log(`Cpu ha tirato: ${computerNut}`);
+console.log(`Giocatore ha tirato: ${userNum}`);
+console.log(`Cpu ha tirato: ${computerNum}`);
 
 // Ecco il vincitore
-if (userNut > computerNut) {
+if (userNum > computerNum) {
     alert("giocatore win")
     console.log("giocatore win");
-} else if (computerNut > userNut) {
+} else if (computerNum > userNum) {
     alert("cpu win")
     console.log("cpu win");
 } else {
